@@ -42,20 +42,20 @@ application.
 ### Configure your stuff
 The configuration file contains some fields which must, and some which should be configured by you.
 
-*[api] api_key (REQUIRED)*
+#####[api] api_key (REQUIRED)
 The API-key created in the Google Developer Console
 
-*[api] search_engine (REQUIRED)*
+#####[api] search_engine (REQUIRED)
 The ID of the CSE created as described above, or use the default value (mine). 
 
-*[cmd] open_url_cmd (REQUIRED)*
+#####[cmd] open_url_cmd (REQUIRED)
 The command that will be used to open the URL retrieved from Google. Defaults go `gnome-open`. The URL
 is passed as the sole parameter to the application.
 
-*[cmd] cmd_out_redirect*
+#####[cmd] cmd_out_redirect
 Where to redirect the output (STDOUT and STDERR) from `open_url_cmd` and `post_cmd`.
 
-*[cmd] post_cmd*
+#####[cmd] post_cmd
 Command that is executed after the URL has been opened. Should be used to give your browser focus. This option
 is *extremely* awesome with the `i3 WM` if you always have your browser in the same workspace. If your browser
 is opened in workspace 2: `post_cmd: i3 workspace2`.   
