@@ -3,17 +3,21 @@ ggl
 
 Google Custom Search for the command line.
 
-Usage:
+### Usage
+
 `./ggl.py i am now searching the web`
+
 Unless you hate your life, place the script somewhere in your PATH.
 
 
 
-Dependencies:
+### Dependencies
 
 The dependencies for GGL can be installed via PIP. This may not be the extensive
 list of external dependencies. 
+
 `$ sudo pip install google-api-python-client curses`
+
 
 GGL uses Google's Custom Search API which only gives you one hundred
 free searches per day. You have to create a new application on the
@@ -21,7 +25,7 @@ Google Developer Console and enable the Custom Search API for this
 application. 
 
 
-To create an API key
+### To create an API key
 
 1. Go to https://cloud.google.com/console/project and create a new project
 2. Click on your newly created project and in the left pane click "APIs and Auth"
@@ -31,7 +35,7 @@ To create an API key
 6. Your newly created API key can now be used with GGL (or anything else)
 
 
-To create a custom search engine
+### To create a custom search engine
 
 1. Go to https://www.google.com/cse/ and click the "Add" button
 2. In the "Sites to Search" field, enter any URL - YOU WILL REMOVE IT LATER!
@@ -40,5 +44,7 @@ To create a custom search engine
 5. From the control panel, click the "Get Code" button. Your Search Engine ID can be found on line 3 of the JS snippet.
 
 
+
+#### Do note!
 The default Search Engine ID is configured exactly as written above, but use
 your own if you want to customize your results even more. :-) 
