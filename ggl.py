@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
 import httplib2
 import sys
 import json
@@ -18,6 +20,8 @@ SNIPPET 	= 4
 B_TITLE 	= 5
 B_LINK  	= 6
 B_SNIPPET 	= 7
+
+CONFIG_PATH = os.path.expanduser("~/.config/ggl/ggl.config")
 
 
 @contextlib.contextmanager
@@ -115,7 +119,9 @@ class ggl_ui:
 class ggl_config:
 	def __init__(self):
 		self.cfg = ConfigParser.ConfigParser()
-		self.cfg.read("ggl.config")
+		if len(self.cfg.read(CONFIG_PATH)) == 0:
+			print "Unable to open ", CONFIG_PATH
+			exit()
 
 		self.assert_config("api", "api_key")
 		self.assert_config("api", "search_engine")
@@ -130,7 +136,7 @@ class ggl_config:
 			cfglen = 0
 
 		if cfglen == 0:
-			print "Option ["+section+"] "+opt+" is required. See README.md"
+			print "Option ["+section+"] "+opt+" is required. See README.md and update '%s'" % CONFIG_PATH
 			exit()
 
 	def get(self, section, opt, default=""):
@@ -160,7 +166,8 @@ def printable_str(str, maxlen):
 	return str
 
 def log(str):
-	os.system("echo \""+str+"\" >> ggl.log")
+	# TODO: Enable logging
+	pass #os.system("echo \""+str+"\" >> ggl.log")
 
 
 def get_cmd_redirect(config):
