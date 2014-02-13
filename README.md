@@ -1,6 +1,8 @@
 ggl
 ===
 
+## Does not currently work unless you call "ggl.py" from a directory where a working "ggl.config" exist. Will fix it tomorrow.
+
 Google Custom Search for the command line.
 
 ### Usage
