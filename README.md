@@ -24,6 +24,11 @@ application.
 
 
 ### To create an API key
+Creating your own API key is unfortunately absolutely required as there is a limit of 100
+daily searches for free per API key, and I plan on using all of mine :) If you want more,
+the price is $5 for every thousand searches beyond the initial 100. Creating the API key
+takes roughly 3 minutes.
+
 1. Go to https://cloud.google.com/console/project and create a new project
 2. Click on your newly created project and in the left pane click "APIs and Auth"
 3. Find the Custom Search API and click the button to enable it
@@ -33,6 +38,9 @@ application.
 
 
 ### To create a custom search engine
+The default Search Engine ID is configured exactly as written above, but create
+your own if you want to customize your results even more. 
+
 1. Go to https://www.google.com/cse/ and click the "Add" button
 2. In the "Sites to Search" field, enter any URL - YOU WILL REMOVE IT LATER!
 3. Click "Create", and on the next page click the "Control Panel" button
@@ -59,8 +67,3 @@ Where to redirect the output (STDOUT and STDERR) from `open_url_cmd` and `post_c
 Command that is executed after the URL has been opened. Should be used to give your browser focus. This option
 is *extremely* awesome with the `i3 WM` if you always have your browser in the same workspace. If your browser
 is opened in workspace 2: `post_cmd: i3 workspace2`.   
-
-
-#### Do note!
-The default Search Engine ID is configured exactly as written above, but use
-your own if you want to customize your results even more. :-) 
