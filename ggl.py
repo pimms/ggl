@@ -135,8 +135,13 @@ class ggl_config:
 
 	def get(self, section, opt, default=""):
 		value = default
-		try:	value = self.cfg.get(section, opt)
-		except:	pass
+		try:	
+			value = self.cfg.get(section, opt)
+			if len(value) == 0:
+				value = default
+		except:	
+			pass
+
 		return value
 
 def printable_str(str, maxlen):
@@ -162,7 +167,7 @@ def get_cmd_redirect(config):
 	# Returns on the form:
 	# " >/dest/file 2>&1 "
 	redirect = " >" 
-	redirect += config.get("cmd", "cmd_dest", "/dev/null") 
+	redirect += config.get("cmd", "cmd_out_redirect", "/dev/null") 
 	redirect += " 2>&1 "
 	return redirect
 
