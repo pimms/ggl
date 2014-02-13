@@ -37,3 +37,4 @@ nosetests.xml
 
 # GGL log and config files
 ggl.log
+ggl.config
