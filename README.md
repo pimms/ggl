@@ -2,7 +2,7 @@ ggl
 ===
 
 Google Custom Search for the command line. The results are displayed 
-with Curses.
+with Curses. The application takes you directly to the resulting page.
 
 ### Usage
 `git clone git@github.com/pimms/ggl && cd ggl`
@@ -10,6 +10,8 @@ with Curses.
 `sudo ./install.sh`
 
 `ggl i am now searching the web`
+
+[![Unsure](http://img.youtube.com/vi/SHkABcLFTEQ/0.jpg)](http://www.youtube.com/watch?v=SHkABcLFTEQ)
 
 
 
