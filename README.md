@@ -1,7 +1,8 @@
 ggl
 ===
 
-Google Custom Search for the command line.
+Google Custom Search for the command line. The results are displayed 
+with Curses.
 
 ### Usage
 `./ggl.py i am now searching the web`
