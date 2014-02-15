@@ -180,7 +180,7 @@ def get_cmd_redirect(config):
 
 def get_cmd(j, sel, config):
 	# The http:// is absolutely necessary 
-	link = j["items"][sel]["formattedUrl"]
+	link = j["items"][sel]["link"]
 	if link[:4] != "http":
 		link = "http://" + link
 
