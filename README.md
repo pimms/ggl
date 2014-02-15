@@ -9,6 +9,8 @@ with Curses.
 
 Unless you hate your life, place the script somewhere in your PATH.
 
+[![Unsure](http://img.youtube.com/vi/SHkABcLFTEQ/0.jpg)](http://www.youtube.com/watch?v=SHkABcLFTEQ)
+
 
 
 ### Dependencies
