@@ -5,9 +5,11 @@ Google Custom Search for the command line. The results are displayed
 with Curses.
 
 ### Usage
-`./ggl.py i am now searching the web`
+`git clone git@github.com/pimms/ggl && cd ggl`
 
-Unless you hate your life, place the script somewhere in your PATH.
+`sudo ./install.sh`
+
+`ggl i am now searching the web`
 
 
 
