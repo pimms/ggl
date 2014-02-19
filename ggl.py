@@ -156,7 +156,7 @@ def printable_str(str, maxlen):
 	off after "maxlen" characters. The string
 	is also re-encoded in UTF-8.
 	"""
-	str = str.encode("utf-8").strip()
+	str = str.encode("utf8").strip()
 
 	str = str.replace("\n", " ")
 	if len(str) > maxlen-6:
@@ -232,6 +232,7 @@ if __name__ == '__main__':
 	# Concat all arguments onto argv[1], deal with it, etc
 	for i in range(2,len(sys.argv)):
 		sys.argv[1] += " " + sys.argv[i]
+	sys.argv[1] = sys.argv[1].decode("utf8")
 
 	main(sys.argv)
  
