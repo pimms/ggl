@@ -38,3 +38,7 @@ nosetests.xml
 # GGL log and config files
 ggl.log
 ggl.config
+
+# VIM Swap files
+.*.swp
+.*.swo
