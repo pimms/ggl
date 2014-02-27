@@ -82,9 +82,10 @@ class ggl_ui:
 					if self.selected > 0:
 						self.selected -= 1
 						self.ui_redraw()
-				elif input == "\n":
+				elif input == "o":
 					run_cmd(self.json, self.selected, self.config)
-					return
+					if input == "\n":
+						return
 
 	def ui_redraw(self):
 		height = self.screen.getmaxyx()[0]
