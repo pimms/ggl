@@ -82,7 +82,7 @@ class ggl_ui:
 					if self.selected > 0:
 						self.selected -= 1
 						self.ui_redraw()
-				elif input == "o":
+				elif input in ("o","\n"):
 					run_cmd(self.json, self.selected, self.config)
 					if input == "\n":
 						return
